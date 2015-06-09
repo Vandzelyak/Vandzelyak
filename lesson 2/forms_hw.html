@@ -16,15 +16,36 @@
     <input type="checkbox" name="a" value="Student"> Student<br>
     <input type="checkbox" name="a" value="Employed"> Employed<br>
     <input type="checkbox" name="a" value="Unemployed"> Unemployed</p>
-    <p>Month and Year of birth<br>
-        <input type="month"  value="1984-01"></p>
+        <label>Month and year of birth<br>
+            <select name="month" size="1">
+                <option value="Jan" selected>January
+                <option value="Feb">February
+                <option value="Mar">March
+                <option value="Apr">April
+            </select>
+            <select name="yeat" size="1">
+                <option value="1984" selected>1984
+                <option value="1985">1985
+                <option value="1986">1986
+                <option value="1987">1987
+            </select>
     <p>Skills and Technologies<br>
-        <select multiple name="Skills and Technologies" size="4">
-            <option value="Tech skills">Tech skills</option>
-            <option value="HTML" >HTML</option>
+        <select multiple name="multiple" size="10">
+            <optgroup label="Tech skills">Tech skills</optgroup>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
             <option value="JavaScript" >JavaScript</option>
             <option value="Git">Git</option>
-        </select>
+                <optgroup label="Soft skills">Soft skills</optgroup>
+                <option value="Time managament">Time managament</option>
+                <option value="Prosctivity">Proactivity</option>
+                <option value="Teamwork" >Teamwork</option>
+                <option value="Leadership">Leadership</option>
+            </select>
+            <p>Photo<br>
+            <input type="file" name="photo"</p>
+            <p>Comments<br>
+                <textarea name="comment" cols="40" rows="3"></textarea></p>
 <p><input type="submit" value="Save"
           formaction="handler.php" formmethod="post"></p>
 </form>
