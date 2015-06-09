@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="handler.php">
+    <p><br>Name</br>
+    <input placeholder="Name" name="user"></p>
+    <p>E-mail</br>
+    <input placeholder="E-mail" name="user"></p>
+    <p>Sex<br>
+    <input type="radio" name="answer" value="a1">Male<input type="radio" name="answer" value="a2">Female</p>
+    <p>Current status<br>
+    <input type="checkbox" name="a" value="Student"> Student<br>
+    <input type="checkbox" name="a" value="Employed"> Employed<br>
+    <input type="checkbox" name="a" value="Unemployed"> Unemployed</p>
+    <p>Month and Year of birth<br>
+        <input type="month"  value="1984-01"></p>
+    <p>Skills and Technologies<br>
+        <select multiple name="Skills and Technologies" size="4">
+            <option value="Tech skills">Tech skills</option>
+            <option value="HTML" >HTML</option>
+            <option value="JavaScript" >JavaScript</option>
+            <option value="Git">Git</option>
+        </select>
+<p><input type="submit" value="Save"
+          formaction="handler.php" formmethod="post"></p>
+</form>
+</body>
+</html>
