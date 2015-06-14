@@ -16,3 +16,35 @@ p:first-letter {
 .plants-list ul ol {
     font-weight: normal
 }
+.plants-list ul ol {
+    font-weight: normal
+}
+#allotment h2 {
+    color: orange;
+}
+#warehouse h2 {
+    color: blue;
+}
+#allotment .fruits-list li {
+    color: grey;
+}
+.fruits-list {
+    color: green;
+}
+.fruits-list {
+    color: green;
+}
+.vegetables-list {
+    color: red;
+}
+.students-table tbody td:first-child {
+    color: orange
+}
+.students-table tbody td + td {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.students-table {
+    font-weight: bold;
+}
