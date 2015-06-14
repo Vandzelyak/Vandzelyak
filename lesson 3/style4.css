@@ -1,0 +1,19 @@
+a[href^="http://ya.ru"], a[href^="https://mail.ya.ru"], a[href^="http://maps.yandex.ru"] {
+    color:#f70;
+}
+a[href^="http://google.com"], a[href^="http://maps.google.com"], a[href^="http://news.google.com"] {
+    color:#666;
+}
+a[target="_blank"]:after{
+    content: "\21F1";
+    position: absolute;
+    display: inline-block;
+    padding: 0 10px;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+

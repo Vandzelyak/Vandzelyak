@@ -1,0 +1,60 @@
+body {
+    font: 14px Arial, sans-serif;
+}
+
+#red,#green,#blue
+
+{
+    display: none;
+}
+#red:checked ~ .red,
+#green:checked ~ .green,
+#blue:checked ~ .blue
+
+{
+    display: none;
+}
+span
+{
+    padding:3px 8px;
+    color:#fff;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.red
+{
+    background-color: red;
+}
+.green
+{
+    background-color: green;
+}
+.blue
+{
+    background-color: blue;
+}
+label
+{
+    margin-right: 35px;
+}
+label:first-of-type
+{
+    margin-left:10px;
+}
+
+label[for="red"]
+{
+    color: red;
+    border-bottom: 1px solid red;
+}
+label[for="green"]
+{
+    color: green;
+    border-bottom: 1px solid green;
+}
+label[for="blue"]
+{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
