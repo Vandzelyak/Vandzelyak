@@ -1,0 +1,6 @@
+html * p:first-of-type {
+    font-size: 150%;
+}
+html * p:last-of-type {
+    color: #999;
+}
