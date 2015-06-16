@@ -1,10 +1,10 @@
-.body {
-    position:relative;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+.line {
+    width:100%;
+    background: #424242;
+    padding: 18px 0px;
 }
+
+
 .menu-wrapper {
     display: table;
     position:absolute;
@@ -14,17 +14,26 @@
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    top: 8px;
+
+    background: #424242;
+
 }
 
 .menu {
     display: table-row;
 
+
 }
 .menu li {
     display: table-cell;
-    float: none;
+    float: left;
 
 }
+.menu li:last-child{
+    float: right;
+}
+
 .menu li a {
     display: block;
     padding: 8px 15px;
@@ -35,8 +44,10 @@
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
+    }
 
-}
+
+
 .menu li a:hover {
     background: #F78181;
     transition: all 0.3s ease;
