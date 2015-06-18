@@ -1,0 +1,29 @@
+ul, p{
+    font-family: Arial;
+    font-size: 12px;
+    margin: 10px;
+
+}
+.pager{
+    width: 100%;
+    background: #F8F8F8;
+    list-style: none;
+    border-color: #D8D8D8;
+}
+
+li{
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    padding: 3px 0;
+}
+a{
+    text-decoration: dashed;
+    color: #9933FF;
+}
+.pager li:nth-child(8) {
+    background: #9933FF;
+}
+.pager .active a {
+    color:white;
+}
