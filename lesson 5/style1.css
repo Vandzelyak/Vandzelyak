@@ -1,0 +1,75 @@
+.menu-wrapper {
+    display: table;
+    position:relative;
+    left:50%;
+    margin-left: -450px;
+    width: 900px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.menu li {
+    display: table-cell;
+    float: none;
+
+}
+.menu li a {
+    display: block;
+    padding: 8px 15px;
+    background: #424242;
+    font-family: Impact;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+.menu li a:hover {
+    background: #F78181;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.menu li ul {
+    color: #424242;
+    position: absolute;
+    display: none;
+    width: 900px;
+}
+.menu li:hover ul {
+    background: white;
+    border:0px;
+    display: block;
+    float:none;
+    margin:0px auto;
+    padding:0px;
+    width:900px;
+}
+.menu li ul li,
+.menu li:hover ul li a{
+    float:none;
+    display:table-cell;
+
+}
+.menu li:hover ul li a{
+    background:#F78181;
+    border:0;
+    color:white;
+    font-size:12px;
+    font-weight:normal;
+    height:20px;
+    line-height:20px;
+    padding:0px;
+    margin:0;
+    text-align:center;
+    white-space:nowrap;
+    width:900px;
+}
+.menu li:hover ul li a:hover{
+    background:#424242;
+}
