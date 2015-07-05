@@ -1,0 +1,100 @@
+.clients_section {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    margin-top: 10px;
+    height: 315px;
+    width: 1400px;
+}
+
+.comments {
+    position: relative;
+    margin: auto;
+    width: 1024px;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.orange {
+    color: #ee8129;
+    text-align: right;
+    margin-left: 24%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.left,
+.right {
+    width: 490px;
+    height: 100px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.comment {
+    width: 365px;
+    height: 100%;
+    background: white;
+    float: right;
+}
+
+.title {
+    height: 37px;
+    width: 330px;
+    margin-left: 15px;
+}
+
+.lead {
+    margin: 0;
+    line-height: 38px;
+    height: 38px;
+    font-size: 22px;
+    color: #637f83;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+}
+
+.name {
+    float: left;
+}
+
+.status {
+    float: right;
+}
+
+.text {
+    margin: 0px;
+    font-size: 14px;
+    color: #959595;
+    font-family: "Trebuchet MS";
+    line-height: 1.5em;
+    margin-left: 15px;
+    width: 330px;
+    height: 61px;
+    padding-top: 10px;
+}
+.comments .left img {
+    position: relative;
+    margin: 0 auto;
+    top: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.comments .right img {
+    position: relative;
+    margin: 0 auto;
+    top: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.more {
+    color: #e4551d;
+    font-size: 11px;
+}

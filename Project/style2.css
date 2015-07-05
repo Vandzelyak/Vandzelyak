@@ -4,6 +4,16 @@
 @font-face {
     font-family: "Open_Sans"; src: url("fonts/Open_Sans.ttf");
 }
+@font-face {
+    font-family: "futura-t-light"; src: url("fonts/futura-t-light.ttf");
+}
+@font-face {
+    font-family: "futura-md-bt-bold"; src: url("fonts/futura-md-bt-bold.ttf");
+}
+
+@font-face {
+    font-family: "futura-t-med-italic"; src: url("fonts/futura-t-med-italic.ttf");
+}
 
 header {
     height: 116px;
@@ -18,7 +28,7 @@ header {
 }
 .company_name {
     margin: auto;
-    font-family: Futura_Md_BT_Medium;
+    font-family: 'Futura_Md_BT_Medium', sans-serif;
     font-size: 36px;
     line-height: 0.833;
     text-align: left;
@@ -49,7 +59,7 @@ nav {
 
 nav ul li {
     display: inline-block;
-    font-family: "Open_Sans";
+    font-family: 'Open_Sans', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     color: #989898;
@@ -64,4 +74,49 @@ nav ul li:hover {
     margin-bottom: -4px;
     cursor: pointer;
     transition: color 0.2s linear, border 0.2s linear;
+}
+.banner {
+    height: 580px;
+    background: url("images/main_banner.png") no-repeat 50%;
+    background-position: 0 0;
+    text-align: center;
+    padding-top: 145px;
+    color: #fff;
+}
+
+.banner h2, .banner h1, .banner p {
+    margin: 0;
+}
+
+.banner h2 {
+    font-family: 'futura-t-light', sans-serif;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.banner h1 {
+    font-family: 'futura-md-bt-bold', sans-serif;
+    font-size: 48px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-family: 'futura-t-med-italic', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+.banner_button {
+    width: 247px;
+    height: 59px;
+    margin-top: 35px;
+    border: 1px solid #96a8ba;
+    font: 600 16px 'Open_Sans', sans-serif;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+    text-transform: uppercase;
 }
