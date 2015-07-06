@@ -14,6 +14,10 @@
 @font-face {
     font-family: "futura-t-med-italic"; src: url("fonts/futura-t-med-italic.ttf");
 }
+@font-face {
+    font-family: "glyphicons-halflings-regular"; src: url("fonts/glyphicons-halflings-regular.ttf");
+}
+
 
 header {
     height: 116px;
@@ -120,3 +124,126 @@ nav ul li:hover {
     outline: 0;
     text-transform: uppercase;
 }
+.services_wrap {
+    height: 563px;
+    margin: 16px auto 0 auto;
+}
+
+.services_title {
+    position: relative;
+    top: auto;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font: 22pt "Trebuchet MS";
+    color: #41525c;
+}
+
+.services_all {
+    position: relative;
+    top: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services_block {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 0;
+    width: 302px;
+}
+
+.icons {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background: url("");
+    background-color: #3070a8;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: inset 3px 3px 0 3px #2b6598;
+}
+
+.icon_title {
+    font: 22pt 'Futura_Md_BT_Medium', sans-serif;
+    color: #3070a8;
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+.icon_text {
+    color: #999999;
+    font: 12pt 'Open_Sans', sans-serif;
+}
+
+.glyphicon-lock, .glyphicon-flash, .glyphicon-phone {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 0 #2b6598,
+    2px 2px 0 #2b6598,
+    3px 3px 0 #2b6598,
+    4px 4px 0 #2b6598,
+    5px 5px 0 #2b6598,
+    6px 6px 0 #2b6598,
+    7px 7px 0 #2b6598,
+    8px 8px 0 #2b6598,
+    9px 9px 0 #2b6598,
+    10px 10px 0 #2b6598,
+    11px 11px 2px #2b6598,
+    12px 12px 3px #2b6598,
+    13px 13px 4px #2b6598,
+    14px 14px 5px #2b6598,
+    15px 15px 8px #2b6598,
+    16px 16px 10px #2b6598,
+    17px 17px 12px #2b6598,
+    18px 18px 15px #2b6598;
+}
+
+.services_glyphicon {
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+
+.middle_section {
+    height: 496px;
+    padding-top: 80px;
+    margin: auto;
+    padding-left: 190px;
+    background-image: url(images/middle_background.png);
+}
+
+.middle_section h2 {
+    font-family: 'Futura_Md_BT_Medium', sans-serif;
+    font-size: 26px;
+    color: #ee8129;
+    text-transform: uppercase;
+    margin:0;
+    text-align: start;
+}
+
+.middle_section p {
+    font-family: 'Open_Sans', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #fff;
+    margin: 19px 0 40px 0;
+}
+
+.middle_section_list {
+    list-style: disc;
+    font-family: 'Open_Sans', sans-serif;
+    font-size: 14px;
+    color: #9d9d9d;
+    line-height: 31px;
+}
+
+.list_item {
+    margin-top: 15px;
+}
+
+.list_item:nth-child(2) {
+    color: #3070a8;
+}
+
+
