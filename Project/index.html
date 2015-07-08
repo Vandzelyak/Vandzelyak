@@ -3,9 +3,25 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="http://maps.google.com/maps?file=api&v=2&&hl=ru&key=ABQIAAAALTPVufm_y4bze0hX1-F_0xQZRRnT-B5O1OVkm-
+IywckVfduigRQhjdjpnbPnmdSpeC9ZOvfNKlNigQ" type="text/javascript"></script>
+    <script type="text/javascript">
+        function GMapInit() {
+            // Инициализация класса Google Maps и расположение карты в слое GMapContainer
+            var map = new GMap2(document.getElementById("GMapContainer"));
+
+            // Задаем настройки вывода
+            map.setCenter(new GLatLng(50.438975, 30.498615), 17); 	// Широта, долгота и коэффициент
+            // увеличения цента (обязательный параметр)
+            map.addControl(new GLargeMapControl()); // Добавляем на карту Google Maps управление прокруткой и приближением
+            map.addControl(new GMapTypeControl());  // Добавляем на карту Google Maps возможность выбрать тип отображения
+            //(карта, вид со спутника, комбинированный режим)
+            map.enableScrollWheelZoom(); // Масштабирование карты скроллингом
+        }
+    </script>
     <link rel="stylesheet" href="style2.css">
 </head>
-<body>
+<body onload="GMapInit()" onunload="GUnload()">
 <header>
 <div>
     <div class="header_fixed">
@@ -86,86 +102,127 @@
         </ul>
     </div>
     <div class="pricing">
-        <h2>We have a very flexible offers for you to choose</h2>
-
-        <div class="offer offer_type_standart">
-            <div class="offer__header offer__header_type_standart">STANDART</div>
-            <div class="offer__body">
-                <div class="offer__name">ICONIC GRAPHICS</div>
-                <div class="offer__price">
-                    <div class="price__upper">$</div>10<div class="price__lower">Monthly</div>
+        <h1>we have very flexible offers for you to choose</h1>
+        <div class="price_box_blue blue">
+            <div class="price_box_head_blue">
+                <h3>Standart</h3>
+            </div>
+            <div class="price_box_body_blue">
+                <h3>Iconic Graphics</h3>
+                <div class="price_box_text_blue">
+                    <div class="price_box_text_sup">$</div>
+                    <div class="price_box_text_big">10</div>
+                    <div class="price_box_text_sub">Monthly</div>
                 </div>
-                <div class="offer__list list">
-                    <div class="list__item"><span class="list__point">&#10004;</span>Unmetered Traffic</div>
-                    <div class="list__item"><span class="list__point">&#10004;</span>Unlimited Domain</div>
-                    <div class="list__item"><span class="list__point">&#10004;</span>Unlimited Databases</div>
-                    <div class="list__item"><span class="list__point">&#10004;</span>Unlimited e-Mails</div>
+                <ul class="price_box_list_blue">
+                    <li><span>Unmetered Traffic</span></li>
+                    <li><span>Unlimited Domain</span></li>
+                    <li><span>Unlimited Databases</span></li>
+                    <li><span>Unlimited e-Mails</span></li>
+                </ul>
+                <button class="price_box_button_blue">Enroll Today</button>
+            </div>
+        </div>
+        <div class="price_box_orange orange">
+            <div class="price_box_head_orange">
+                <h3>Best Value</h3>
+            </div>
+            <div class="price_box_body_orange">
+                <h3>Iconic Graphics</h3>
+                <div class="price_box_text_orange">
+                    <div class="price_box_text_sup">$</div>
+                    <div class="price_box_text_big">25</div>
+                    <div class="price_box_text_sub">Monthly</div>
                 </div>
-                <button class="offer__button offer__button_type_standart">ENROLL TODAY</button>
-            </div>
-        </div><div class="offer offer_type_best">
-        <div class="offer__header offer__header_type_best">BEST VALUE</div>
-        <div class="offer__body">
-            <div class="offer__name">ICONIC GRAPHICS</div>
-            <div class="offer__price">
-                <div class="price__upper">$</div>25<div class="price__lower">Monthly</div>
-            </div>
-            <div class="offer__list list">
-                <div class="list__item"><span class="list__point">&#10004;</span>PHP, PERL, ASP, JSP</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>SEMI DEDICATED</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>Staging or Production</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>Unlimited e-Mails</div>
-            </div>
-            <button class="offer__button offer__button_type_best">ENROLL TODAY</button>
-        </div>
-    </div><div class="offer offer_type_ultimate">
-        <div class="offer__header offer__header_type_ultimate">ULTIMATE</div>
-        <div class="offer__body">
-            <div class="offer__name">ICONIC GRAPHICS</div>
-            <div class="offer__price">
-                <div class="price__upper">$</div>35<div class="price__lower">Monthly</div>
-            </div>
-            <div class="offer__list list">
-                <div class="list__item"><span class="list__point">&#10004;</span>Semi Dedicated</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>1TB Storage</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>Faster Site, Better SEO</div>
-                <div class="list__item"><span class="list__point">&#10004;</span>Unlimited e-Mails</div>
-            </div>
-            <button class="offer__button offer__button_type_ultimate">ENROLL TODAY</button>
-        </div>
-    </div>
-    </div>
-
-    <div class="reviews">
-        <h2 class="reviews__header"><span>WHAT</span> CLIENT SAYS</h2>
-
-        <div class="reviews__item">
-            <img src="img/face1.jpg" height="98" width="99" class="reviews__img">
-            <div class="reviews__speech-bubble speech-bubble">
-                <div class="speech-bubble__customer-name">- Staciya Trollio</div>
-                <div class="speech-bubble__customer">Customer</div>
-                <div class="speech-bubble__review">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.</div>
+                <div class="price_box_list_orange">
+                    <ul>
+                        <li class="text_uppercase"><span>php, perl, asp, jsp</span>
+                        </li>
+                        <li class="text_uppercase"><span>semi dedicated</span>
+                        </li>
+                        <li><span>Staging or Production</span>
+                        </li>
+                        <li><span>Unlimited e-Mails</span>
+                        </li>
+                    </ul>
+                </div>
+                <button class="price_box_button_orange orange">Enroll Today</button>
             </div>
         </div>
-        <div class="reviews__item">
-            <img src="img/face2.jpg" height="98" width="99" class="reviews__img">
-            <div class="reviews__speech-bubble speech-bubble">
-                <div class="speech-bubble__customer-name">- David Soul</div>
-                <div class="speech-bubble__customer">Customer</div>
-                <div class="speech-bubble__review">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.</div>
+        <div class="price_box_green green">
+            <div class="price_box_head_green">
+                <h3>Standart</h3>
+            </div>
+            <div class="price_box_body_green">
+                <h3>Iconic Graphics</h3>
+                <div class="price_box_text_green">
+                    <div class="price_box_text_sup">$</div>
+                    <div class="price_box_text_big">35</div>
+                    <div class="price_box_text_sub">Monthly</div>
+                </div>
+                <ul class="price_box_list_green">
+                    <li><span>Semi Dedicated</span></li>
+                    <li><span>1TB Storage</span></li>
+                    <li><span>Faster Site, Better SEO</span></li>
+                    <li><span>Unlimited e-Mails</span></li>
+                </ul>
+                <button class="price_box_button_blue">Enroll Today</button>
             </div>
         </div>
     </div>
 
+    <div class="clients_section">
+        <p class="what_client_says">
+            <span class="what">what</span>
+            <span class="client_says">client says</span>
+        </p>
+        <div class="comments">
+            <div class="left">
+                <img src="images/Stasiya.png" alt="">
+                <div class="comment">
+                    <div class="title">
+                        <p class="lead">
+                            <span class="name">- Staciya Trollio</span>
+                            <span class="status">Customer</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text">
+                            Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="speech_bubble"></div>
+            </div>
+            <div class="right">
+                <img src="images/David.png" alt="">
+                <div class="comment">
+                    <div class="title">
+                        <p class="lead">
+                            <span class="name">- David Soul</span>
+                            <span class="status">Customer</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text">
+                            Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="speech_bubble"></div>
+            </div>
+        </div>
+    </div>
+    <div id="GMapContainer"></div>
     <div class="contacts">
-        <address class="address">Iconic Graphics<br>123 Main Street<br>EastWest<br>LHR54500</address>
+        <address class="address">Iconic Graphics</address>
+        <address>123 Main Street<br>EastWest<br>LHR54500</address>
         <address class="phone">012.345.6789</address>
         <address class="mail">info@iconicgraphics.com</address>
         <a href="#" class="fb"></a>
         <a href="#" class="twitter"></a>
         <a href="#" class="in"></a>
     </div>
-
 </main>
 </div>
 <footer><p>Copyright &#169; 2014 <span>Company Name.</span> All rights reserved.<br>Designed by <a href="inconicgraphics.com">InconicGraphics.com</a></p></footer>
