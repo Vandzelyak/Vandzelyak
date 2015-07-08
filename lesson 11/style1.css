@@ -102,8 +102,74 @@ h4 {
 
 .pic_scale:hover,
 .pic_link:hover {
+    color: #162f4e;
     border-color: transparent;
-    color: #162F4E;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    opacity: 0;
+    background-color: rgba(255,255,255, 1);
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    width: 1028px;
+    height: 768px;
+    margin: 0 auto;
+    -webkit-transition: all ease-in .5s;
+    transition: all ease-in .5s;
+    opacity: 0;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.overlay:target + .popup {
+    top: 10%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #15a4fa;
+}
+
+.close:before {
+    font-size: 2em;
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    content: 'x';
+    color: #fff;
+}
+
+.close:hover {
+    background: #fa4b15;
 }
 
 @media (max-width: 1170px) {
