@@ -80,12 +80,18 @@ nav ul li:hover {
     transition: color 0.2s linear, border 0.2s linear;
 }
 .banner {
-    height: 580px;
-    background: url("images/main_banner.png") no-repeat 50%;
-    background-position: 0 0;
+    height: 435px;
+    background: url("images/main_banner.png");
     text-align: center;
     padding-top: 145px;
     color: #fff;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .banner h2, .banner h1, .banner p {
@@ -126,7 +132,7 @@ nav ul li:hover {
 }
 .services_wrap {
     height: 563px;
-    margin: 16px auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 
 .services_title {
@@ -176,73 +182,53 @@ nav ul li:hover {
     font: 12pt 'Open_Sans', sans-serif;
 }
 
-.glyphicon-lock, .glyphicon-flash, .glyphicon-phone {
-    font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 0 #2b6598,
-    2px 2px 0 #2b6598,
-    3px 3px 0 #2b6598,
-    4px 4px 0 #2b6598,
-    5px 5px 0 #2b6598,
-    6px 6px 0 #2b6598,
-    7px 7px 0 #2b6598,
-    8px 8px 0 #2b6598,
-    9px 9px 0 #2b6598,
-    10px 10px 0 #2b6598,
-    11px 11px 2px #2b6598,
-    12px 12px 3px #2b6598,
-    13px 13px 4px #2b6598,
-    14px 14px 5px #2b6598,
-    15px 15px 8px #2b6598,
-    16px 16px 10px #2b6598,
-    17px 17px 12px #2b6598,
-    18px 18px 15px #2b6598;
-}
 
-.services_glyphicon {
-    position: relative;
-    top: 40px;
-    margin: auto;
-}
 
-.middle_section {
+.middle {
     height: 496px;
     padding-top: 80px;
     margin: auto;
-    padding-left: 190px;
     background-image: url(images/middle_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-flow: row wrap;
+
 }
 
-.middle_section h2 {
+.middle h2 {
     font-family: 'Futura_Md_BT_Medium', sans-serif;
     font-size: 26px;
     color: #ee8129;
     text-transform: uppercase;
     margin:0;
     text-align: start;
+    padding-left: 190px;
 }
 
-.middle_section p {
+.middle p {
     font-family: 'Open_Sans', sans-serif;
     font-size: 22px;
     font-style: italic;
     color: #fff;
     margin: 19px 0 40px 0;
+    padding-left: 190px;
 }
 
-.middle_section_list {
+.middle-list {
     list-style: disc;
     font-family: 'Open_Sans', sans-serif;
     font-size: 14px;
     color: #9d9d9d;
     line-height: 31px;
+    padding-left: 190px;
 }
 
-.list_item {
+.list-item {
     margin-top: 15px;
 }
 
-.list_item:nth-child(2) {
+.list-item:nth-child(2) {
     color: #3070a8;
 }
 
@@ -252,7 +238,7 @@ nav ul li:hover {
     height: 700px;
 }
 
-.pricing h1 {
+.pricing h2 {
     color: #41525c;
     text-transform: uppercase;
     margin-top: 65px;
@@ -267,6 +253,8 @@ nav ul li:hover {
 .price_box_green {
     position: relative;
     z-index: 1;
+    vertical-align: top;
+
 }
 
 .price_box_blue h3,
@@ -293,10 +281,11 @@ nav ul li:hover {
     border-radius: 5px;
     border: 1px solid #e8eaec;
     position: relative;
-    top: 148px;
-    left: 17.5%;
-    margin: -206px 0 0 -410px;
+    left: -4%;
+    margin: -125px 0 0 -125px;
+    margin-top: 80px;
     overflow: hidden;
+
 }
 
 .price_box_blue {
@@ -418,12 +407,13 @@ nav ul li:hover {
     border-radius: 5px;
     border: 4px solid #ee8129;
     position: relative;
-    top: 160px;
-    left: 26%;
-    margin: -100px 0 0 -125px;
+    left: 5%;
+    margin: -125px 0 0 -125px;
     z-index: 2;
     overflow: hidden;
     box-shadow: 0px 0px 12.90px 0.15px rgba(8, 116, 178, 0.3);
+    margin-top: 70px;
+
 }
 .orange {
     background-color: #ee8129;
@@ -522,9 +512,9 @@ nav ul li:hover {
     display: inline-block;
     padding: 0 0;
     position: relative;
-    top: 148px;
-    left: 13.5%;
-    margin: -206px 0 0 160px;
+    left: 14%;
+    margin: -125px 0 0 -125px;
+    margin-top: 80px;
     -webkit-box-sizing: border-box; /*for Safari and Chrome*/
     -moz-box-sizing: border-box; /*for Firefox*/
     box-sizing: border-box; /*for IE and Opera*/
@@ -663,9 +653,9 @@ nav ul li:hover {
     position: relative;
     width: 0;
     height: 0;
-    border-top: 10.5px solid transparent;
+    border-top: 11px solid transparent;
     border-right: 15px solid white;
-    border-bottom: 10.5px solid transparent;
+    border-bottom: 11px solid transparent;
     float: right;
     top: 50%;
     margin-top: -15px;
