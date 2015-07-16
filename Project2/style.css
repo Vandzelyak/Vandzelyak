@@ -799,6 +799,7 @@ blockquote p {
         width: 100%;
         float: none;
         text-align: left;
+        z-index: 5;
     }
     .reviews p {
         width: 100%;
@@ -811,13 +812,22 @@ blockquote p {
         position: absolute;
         margin-top: 135px;
     }
-    .blockquote::before {
+    blockquote::before {
         margin-right: 5.2em;
-        vertical-align: -.4em;
-        margin-top: 40px;
+        vertical-align: -5.4em;
+        margin-top: 10px;
         margin-left: auto;
     }
-
+    blockquote::after {
+        display: table-row;
+        margin-top: 10px;
+        color: #00b89a;
+    }
+    .reviews-arrow {
+        margin: 0 auto;
+        display: block;
+        text-align:center;
+    }
 
 
     .comments-bottom-wrapper {
