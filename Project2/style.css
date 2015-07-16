@@ -556,7 +556,7 @@ blockquote p {
         font-size: 20px;
     }
     .form-item {
-        font-size: 12px;
+        font-size: 14px;
         width: 320px;
         height: 30px;
     }
@@ -661,4 +661,7 @@ blockquote p {
     .signature {
         width: 60%;
     }
+}
+@media (max-width: 799px){
+
 }
