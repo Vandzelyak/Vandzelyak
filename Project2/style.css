@@ -154,9 +154,8 @@ h1 {
     padding: 30px 20px;
     border-bottom: 5px solid #3498db;
     background: #fff;
+    z-index: 5;
 }
-
-
 
 .banner-form-title {
     font-size: 25px;
@@ -662,6 +661,230 @@ blockquote p {
         width: 60%;
     }
 }
-@media (max-width: 799px){
 
+/*mobile*/
+
+@media (max-width: 799px) {
+    body {
+        width: 100%;
+        max-width: 799px;
+        min-width: 320px;
+    }
+    .header {
+        width: 100%;
+        height: 160px;
+    }
+    .header-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .circle-logo {
+        display: block;
+        float: none;
+        margin: 0 auto 0 47%;
+        top: 12px;
+        width: 52px;
+        height: 52px;
+    }
+    .header-wrapper > h1 {
+        display: block;
+        margin: 2px auto;
+        float: none;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid #2980b9;
+        width: 300px;
+    }
+    .header-connect {
+        display: block;
+        float: none;
+        text-align: center;
+        width: 135px;
+        margin: 0 auto;
+        padding: 10px 0 42px 0;
+    }
+    .header-social-connect {
+        padding: 3px 0 0 0;
+    }
+    .header-social {
+        padding: 0;
+    }
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+    .banner {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .banner-title {
+        padding: 10px 0 0 0;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 34px;
+    }
+    .banner-lead {
+        width: 300px;
+        text-align: center;
+        font-size: 16px;
+        padding-left: 15px;
+        line-height: 25px;
+    }
+    .banner-form {
+        width: 320px;
+        height: 560px;
+        left: 0;
+        top: 160px;
+    }
+    .form-item {
+        width: 280px;
+    }
+    .form-submit {
+        width: 280px;
+    }
+    .about {
+        height: 680px;
+        text-align: center;
+    }
+    .about-text {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 395px;
+        text-align: center;
+    }
+    .about-text > h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .about-text > p {
+        margin-left: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .benefits {
+        width: 300px;
+        margin: 30px auto 0 auto;
+        border-bottom: 1px solid #EBEBEB;
+    }
+    .benefits-definition {
+        text-align: center;
+    }
+    .benefit-point {
+        float: none;
+        margin: 0 0 40px 0;
+    }
+    .reviews {
+        width: 300px;
+        margin: 0 auto;
+        height: 500px;
+
+    }
+    .wrapper {
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+        padding-bottom: 166px;
+        padding-top: 0;
+        height: 500px;
+    }
+    .reviews h1 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    blockquote {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .reviews p {
+        width: 100%;
+        position: absolute;
+        float: none;
+        text-align: justify;
+    }
+    .reviews cite {
+        width: 100%;
+        position: absolute;
+        margin-top: 135px;
+    }
+    .blockquote::before {
+        margin-right: 5.2em;
+        vertical-align: -.4em;
+        margin-top: 40px;
+        margin-left: auto;
+    }
+
+
+
+    .comments-bottom-wrapper {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .comments-bottom {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+    .comments-bottom-button {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding: 10px 25px 60px 25px;
+        font-size: 20px;
+        line-height: 1.45;
+    }
+    .comments-bottom-button:after {
+        width: 20px;
+        height: 20px;
+        left: 134px;
+        top: 78px;
+    }
+    .comments-bottom-pic {
+        top: -126px;
+        right: 30px;
+    }
+    .footer-wrapper {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .footer-home-link {
+        float: none;
+        margin: 0 auto;
+        padding-right: 0;
+        border-right: none;
+    }
+    .circle-logo {
+        float: none;
+        margin: 0 auto;
+        width: 53px;
+    }
+    .footer-home-link h4 {
+        display: inline;
+        float: none;
+        margin: 10px auto 0 auto;
+        padding: 0 0 8px 0;
+        width: 184px;
+        border-bottom: 1px solid #2980b9;
+        line-height: 52px;
+    }
+    .footer-connect {
+        float: none;
+        margin: 15px auto;
+        padding: 10px 0 50px 0;
+        width: 146px;
+    }
+    .signature {
+        width: 90%;
+        padding: 0;
+        text-align: center;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
 }
