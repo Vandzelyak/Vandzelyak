@@ -19,6 +19,7 @@
 }
 .header-wrapper,
 .container,
+.banner,
 .about-text,
 .benefits-title,
 .wrapper,
@@ -124,11 +125,15 @@ h1 {
     background: url(images/1.jpg) no-repeat center;
     height: 351px;
 }
+.container {
+    display: block;
+}
 
 .banner-title {
     font-size: 50px;
     text-transform: uppercase;
     color: #fff;
+
 }
 
 .banner-lead {
@@ -142,7 +147,7 @@ h1 {
 
 .banner-form {
     position: absolute;
-    top: -33px;
+    top: -55px;
     right: 0;
     width: 360px;
     height: 535px;
@@ -150,6 +155,8 @@ h1 {
     border-bottom: 5px solid #3498db;
     background: #fff;
 }
+
+
 
 .banner-form-title {
     font-size: 25px;
@@ -176,7 +183,7 @@ h1 {
 }
 
 .form-item:first-child {
-background: url(images/arrow.png) no-repeat #f2f2f2 95%;
+    background: url(images/arrow.png) no-repeat #f2f2f2 95%;
 }
 
 .form-item:first-child:hover {
@@ -214,7 +221,7 @@ background: url(images/arrow.png) no-repeat #f2f2f2 95%;
 
 .form-submit:hover,
 .form-submit:active {
-    background: #ff5242;
+    background: #f54c3c;
 }
 
 .form-item::-webkit-input-placeholder {
@@ -252,112 +259,55 @@ background: url(images/arrow.png) no-repeat #f2f2f2 95%;
     padding: 0;
 }
 
+
 /*benefits section*/
 
 .benefits {
-    height: 532px;
-    background: white;
-    margin: 0 auto;
-    padding: 0;
+    margin: 30px auto 0 auto;
+    width: 1000px;
 }
-
-.benefits-title {
-    height: 532px;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.benefits-title h3 {
-    text-transform: uppercase;
-    color: #3498db;
-    font-size: 25px;
-    font-weight: normal;
-    text-align: left;
-    margin: 0;
-    padding: 38px 0 0 0;
-}
-
-.benefits-sections {
-    margin: 32px auto 0 auto;
-}
-
-.benefits-block {
-    display: inline-block;
-    margin: 0 60px 0 0;
-    padding: 0 0;
-    width: 290px;
-    text-align: center;
-}
-
-.benefits-block h4 {
-    text-transform: uppercase;
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 26px 0 0 0;
-    padding: 0;
-}
-
-.benefits-block p {
-    color: black;
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 20px 0 0 0;
-    padding: 0;
-    height: 122px;
-    overflow: hidden;
-}
-
-.benefits-block:last-child {
-    margin: 0;
-}
-
-#block-pic-left {
-    background: url("images/2.jpg") no-repeat;
-    height: 158px;
-    margin: 0 auto;
-}
-
-#block-pic-middle {
-    background: url("images/3.jpg") no-repeat;
-    height: 158px;
-    margin: 0 auto;
-}
-
-#block-pic-right {
-    background: url("images/4.jpg") no-repeat;
-    height: 158px;
-    margin: 0 auto;
-}
-
-.view {
-    margin: 23px 0 0 118px;
-    padding: 0;
-}
-
-.button-view {
-    text-align: center;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    padding: 17px 2px;
-    border-radius: 50%;
-    cursor: default;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
+.benefits-definition {
     display: block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid #e6e6e6;
-    transition: all 0.2s;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #3498db;
+    line-height: 1.68;
+    text-align: left;
 }
-
-.button-view:hover {
-    color: #d6e8f4;
+.benefits-blocks {
+    text-align: center;
+}
+.benefit-point {
+    display: block;
+    width: 300px;
+    float: left;
+}
+.middle-block {
+    margin: 0 50px;
+}
+.benefit-text {
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    line-height: 1.538;
+    margin-bottom: 12%;
+}
+.benefit-button {
+    text-decoration: none;
+    border: solid 1px #d6e8f4;
+    border-radius: 50%;
+    padding: 15px 5px;
+    color: rgb(51, 51, 51);
+    transition: border 0.2s, background 0.2s;
+    text-transform: uppercase;
+}
+.benefit-button:hover {
+    border-color: #d6e8f4;
+    background-color: #3498db;
+    color: white;
     font-weight: bold;
-    border: 1px solid #d6e8f4;
-    background: #3498db;
-    cursor: pointer;
+}
+.comments {
+    width: 100%;
 }
 
 /*reviews section*/
@@ -369,9 +319,10 @@ background: url(images/arrow.png) no-repeat #f2f2f2 95%;
 }
 .reviews {
     width: 100%;
-    height: 252px;
+    height: 255px;
     text-align: right;
     position: relative;
+    margin-top: 75px;
 }
 
 .reviews p{
@@ -402,6 +353,7 @@ background: url(images/arrow.png) no-repeat #f2f2f2 95%;
     height: 44px;
     width: 44px;
     display: inline-block;
+    margin-top: 15px;
 }
 
 .slider-right {
@@ -410,8 +362,7 @@ background: url(images/arrow.png) no-repeat #f2f2f2 95%;
     width: 44px;
     display: inline-block;
 }
-.reviews-pic {
-    background: url(images/5.png) no-repeat;
+.reviews-quote {
     z-index: 1;
     height: 364px;
     width: 225px;
@@ -443,7 +394,7 @@ blockquote::after {
     color: #f2f2f2;
     font-size: 4em;
     line-height: 0.1em;
-    vertical-align: -.55em;
+    vertical-align: -.95em;
 }
 
 blockquote p {
@@ -451,7 +402,7 @@ blockquote p {
 }
 
 .reviews cite {
-    display: block;
+    display: inline;
     text-align: right;
     font-style: normal;
     font-weight: bolder;
@@ -461,35 +412,46 @@ blockquote p {
 
 /*start section*/
 
-.get-started {
-    height: 190px;
-    background: #f2f2f2;
-    width: 100%;
+.comments-bottom {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
 }
-
-#start button {
-    width: 540px;
-    height: 60px;
-    color: white;
-    font-size: 22px;
-    background: #e74c3c;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    margin: 67px 0 0 0;
-    padding: 0;
+.comments-bottom-wrapper {
+    width: 1000px;
+    margin: 0 auto;
     position: relative;
 }
-
-#start button:after {
-    content: "\1433";
-    position: absolute;
-    font-size: 20px;
+.comments-bottom-button {
+    width: 540px;
+    text-transform: uppercase;
+    text-decoration: none;
     color: white;
-    margin: -3px 0 0 19px;
-    border: 2px solid white;
+    background-color: #e74c3c;
+    font-size: 22px;
+    display: inline-block;
+    padding: 16px 0 16px 50px;
+    transition: background 0.1s;
+    margin: 2px 0 0 0;
+}
+.comments-bottom-button:hover {
+    background-color: #f54c3c;
+}
+.comments-bottom-button:after {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
     border-radius: 50%;
-    padding: 0 6px 0 7px;
+    position: absolute;
+    left: 480px;
+    content: "\1433";
+    margin: -3px 0 0 0;
+    padding: 0 0 10px 10px;
+}
+.comments-bottom-pic {
+    position: absolute;
+    top: -244px;
+    right: 28px;
 }
 
 /*footer*/
@@ -564,4 +526,139 @@ blockquote p {
     padding-top: 6px;
     padding-left: 30px;
     font-size: 13px;
+}
+
+
+
+/*tablet*/
+
+@media (max-width: 1000px) and (min-width: 800px){
+    body {
+        width: 100%;
+        max-width: 1000px;
+        min-width: 800px;
+    }
+    .header-wrapper {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .container {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .banner-form {
+        width: 47%;
+        height: 475px;
+        padding: 20px 20px;
+        top: -47px;
+    }
+    .banner-form-title {
+        font-size: 20px;
+    }
+    .form-item {
+        font-size: 12px;
+        width: 320px;
+        height: 30px;
+    }
+    .form-item-big {
+        height: 72px;
+    }
+    .form-submit {
+        font-size: 22px;
+        width: 320px;
+        margin-top: 22px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+    .banner-lead {
+        font-size: 20px;
+        line-height: 1.5;
+        width: 50%;
+    }
+    .about-text {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .about-text p {
+        width: 50%;
+    }
+    .benefits-title h3 {
+        margin-top: -30px;
+    }
+    .benefits {
+        margin: 30px auto 0 auto;
+        width: 766px;
+    }
+    .benefits-block {
+        float: none;
+        width: 20%;
+    }
+    .middle-block {
+        margin: 0;
+    }
+    .benefit-pic {
+        float: left;
+        padding-right: 20px;
+    }
+    .benefit-description,
+    .benefit-text {
+        text-align: left;
+    }
+    .benefit-text {
+        margin-bottom: 10px;
+    }
+    .benefit-point {
+        float: none;
+        width: 100%;
+    }
+    .benefit-button {
+        float: left;
+    }
+    .reviews {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .wrapper {
+        width: 766px;
+        margin: 0 auto;
+    }
+    blockquote {
+        width: 80%;
+    }
+    .reviews p {
+        width: 80%;
+    }
+    .comments-bottom-button {
+        padding: 16px 0 16px 50px;
+        margin: 0 auto;
+    }
+    .comments-bottom {
+        height: 190px;
+    }
+    .comments-bottom-wrapper {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .comments-bottom-pic {
+        margin-top: 0.65em;
+    }
+    .comments-bottom-button {
+        font-size: 19px;
+        width: 470px;
+        padding-top: 17px;
+    }
+    .comments-bottom-button:after {
+        left: 415px;
+        top: 15px;
+        padding-bottom: 8px;
+    }
+    .footer-wrapper {
+        width: 766px;
+        margin: 0 auto;
+    }
+    .signature {
+        width: 60%;
+    }
 }
