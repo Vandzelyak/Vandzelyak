@@ -322,6 +322,7 @@ h1 {
     text-align: right;
     position: relative;
     margin-top: 75px;
+    padding-left: 5px;
 }
 
 .reviews p{
@@ -361,18 +362,16 @@ h1 {
     width: 44px;
     display: inline-block;
 }
-.reviews-quote {
-    z-index: 1;
-    height: 364px;
-    width: 225px;
-    float: right;
-    position: relative;
-    top: 32px;
-}
 
 blockquote {
     margin: 0 300px 0 0;
     width: 730px;
+    z-index: 1;
+    height: 364px;
+    float: right;
+    position: relative;
+    top: 32px;
+    padding-left: 35px;
 }
 
 blockquote::before {
@@ -382,7 +381,7 @@ blockquote::before {
     line-height: 0.1em;
     margin-right: 0.2em;
     vertical-align: -.4em;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: auto;
     display: block;
     position: absolute;
@@ -394,6 +393,7 @@ blockquote::after {
     font-size: 4em;
     line-height: 0.1em;
     vertical-align: -.95em;
+    margin-right: -35px;
 }
 
 blockquote p {
@@ -407,6 +407,7 @@ blockquote p {
     font-weight: bolder;
     text-transform: uppercase;
     line-height: 3em;
+    margin-right: -21px;
 }
 
 /*start section*/
@@ -415,6 +416,7 @@ blockquote p {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #f2f2f2;
+    height: 191px;
 }
 .comments-bottom-wrapper {
     width: 1000px;
@@ -431,7 +433,6 @@ blockquote p {
     display: inline-block;
     padding: 16px 0 16px 50px;
     transition: background 0.1s;
-    margin: 2px 0 0 0;
 }
 .comments-bottom-button:hover {
     background-color: #f54c3c;
@@ -449,7 +450,7 @@ blockquote p {
 }
 .comments-bottom-pic {
     position: absolute;
-    top: -244px;
+    top: -233px;
     right: 28px;
 }
 
@@ -605,6 +606,9 @@ blockquote p {
     .benefit-text {
         text-align: left;
     }
+    .benefit-description {
+        text-transform: uppercase;
+    }
     .benefit-text {
         margin-bottom: 10px;
     }
@@ -614,6 +618,8 @@ blockquote p {
     }
     .benefit-button {
         float: left;
+        font-size: 12px;
+        padding: 11px 5px;
     }
     .reviews {
         width: 766px;
