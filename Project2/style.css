@@ -127,6 +127,7 @@ h1 {
 }
 .container {
     display: block;
+    height: 351px;
 }
 
 .banner-title {
@@ -147,7 +148,7 @@ h1 {
 
 .banner-form {
     position: absolute;
-    top: -55px;
+    top: -35px;
     right: 0;
     width: 360px;
     height: 535px;
@@ -254,7 +255,7 @@ h1 {
     line-height: 1.5;
 }
 .about {
-    margin: 0 auto;
+    margin: -62px auto;
     padding: 0;
 }
 
@@ -262,7 +263,7 @@ h1 {
 /*benefits section*/
 
 .benefits {
-    margin: 30px auto 0 auto;
+    margin: 90px auto 0 auto;
     width: 1000px;
 }
 .benefits-definition {
@@ -303,7 +304,6 @@ h1 {
     border-color: #d6e8f4;
     background-color: #3498db;
     color: white;
-    font-weight: bold;
 }
 .comments {
     width: 100%;
@@ -367,7 +367,6 @@ blockquote {
     margin: 0 300px 0 0;
     width: 730px;
     z-index: 1;
-    height: 364px;
     float: right;
     position: relative;
     top: 32px;
@@ -431,22 +430,23 @@ blockquote p {
     background-color: #e74c3c;
     font-size: 22px;
     display: inline-block;
-    padding: 16px 0 16px 50px;
+    padding: 16px 20px 16px 0;
     transition: background 0.1s;
+    border: hidden;
 }
 .comments-bottom-button:hover {
     background-color: #f54c3c;
+    cursor: pointer;
 }
 .comments-bottom-button:after {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #fff;
     border-radius: 50%;
     position: absolute;
     left: 480px;
-    content: "\1433";
-    margin: -3px 0 0 0;
-    padding: 0 0 10px 10px;
+    content: " ";
+    margin: 1px 0 0 -28px;
 }
 .comments-bottom-pic {
     position: absolute;
@@ -548,34 +548,29 @@ blockquote p {
     }
     .banner-form {
         width: 47%;
-        height: 475px;
-        padding: 20px 20px;
-        top: -47px;
-    }
-    .banner-form-title {
-        font-size: 20px;
+        top: -30px;
     }
     .form-item {
-        font-size: 14px;
         width: 320px;
-        height: 30px;
     }
     .form-item-big {
         height: 72px;
     }
     .form-submit {
-        font-size: 22px;
         width: 320px;
         margin-top: 22px;
     }
-
     .banner-title {
-        font-size: 32px;
+        margin-top: 60px;
+        font-size: 42px;
     }
     .banner-lead {
-        font-size: 20px;
+        font-size: 25px;
         line-height: 1.5;
         width: 50%;
+    }
+    .about {
+        margin-top: -81px;
     }
     .about-text {
         width: 766px;
@@ -584,11 +579,9 @@ blockquote p {
     .about-text p {
         width: 50%;
     }
-    .benefits-title h3 {
-        margin-top: -30px;
-    }
+
     .benefits {
-        margin: 30px auto 0 auto;
+        margin: 80px auto 0 auto;
         width: 766px;
     }
     .benefits-block {
@@ -623,17 +616,38 @@ blockquote p {
     }
     .reviews {
         width: 766px;
-        margin: 0 auto;
+        margin: 30px auto;
     }
     .wrapper {
         width: 766px;
         margin: 0 auto;
     }
     blockquote {
-        width: 80%;
+        width: 530px;
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    blockquote::before {
+        margin-right: 6.2em;
+        vertical-align: -5.4em;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    blockquote::after {
+        margin-top: 10px;
+        margin-right: -70px;
+    }
+    .reviews h1 {
+        font-weight: lighter;
     }
     .reviews p {
-        width: 80%;
+        width: 540px;
+        margin-left: 30px;
+    }
+    .reviews cite {
+        width: 100%;
+        margin-top: 135px;
+        margin-right: -20px;
     }
     .comments-bottom-button {
         padding: 16px 0 16px 50px;
@@ -646,18 +660,14 @@ blockquote p {
         width: 766px;
         margin: 0 auto;
     }
-    .comments-bottom-pic {
-        margin-top: 0.65em;
-    }
     .comments-bottom-button {
         font-size: 19px;
         width: 470px;
         padding-top: 17px;
     }
     .comments-bottom-button:after {
-        left: 415px;
+        left: 452px;
         top: 15px;
-        padding-bottom: 8px;
     }
     .footer-wrapper {
         width: 766px;
@@ -787,7 +797,6 @@ blockquote p {
         width: 300px;
         margin: 0 auto;
         height: 500px;
-
     }
     .wrapper {
         margin: 0 auto;
