@@ -445,8 +445,9 @@ blockquote p {
     border-radius: 50%;
     position: absolute;
     left: 480px;
-    content: " ";
-    margin: 1px 0 0 -28px;
+    content: "\003e";
+    margin: 1px 0 0 -5px;
+    padding: 1px 0 0 -28px;
 }
 .comments-bottom-pic {
     position: absolute;
@@ -666,8 +667,17 @@ blockquote p {
         padding-top: 17px;
     }
     .comments-bottom-button:after {
-        left: 452px;
+        left: 422px;
         top: 15px;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        content: "\003e";
+        margin: 1px 0 0 12px;
+        padding: 1px 0 0 -28px;
+
     }
     .footer-wrapper {
         width: 766px;
@@ -727,6 +737,7 @@ blockquote p {
     }
     .container {
         width: 300px;
+        height: 392px;
         margin: 0 auto;
         padding-bottom: 150px;
     }
@@ -735,7 +746,6 @@ blockquote p {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-
     }
     .banner-title {
         padding: 10px 0 0 0;
@@ -752,7 +762,6 @@ blockquote p {
     }
     .banner-form {
         width: 320px;
-        height: 560px;
         left: 0;
         top: 160px;
     }
@@ -769,7 +778,7 @@ blockquote p {
     .about-text {
         width: 300px;
         margin: 0 auto;
-        padding-top: 395px;
+        padding-top: 370px;
         text-align: center;
     }
     .about-text > h4 {
@@ -783,8 +792,12 @@ blockquote p {
     }
     .benefits {
         width: 300px;
-        margin: 30px auto 0 auto;
+        margin: 95px auto 0 auto;
         border-bottom: 1px solid #EBEBEB;
+    }
+    .benefit-description {
+        text-transform: uppercase;
+        font-size: 18px
     }
     .benefits-definition {
         text-align: center;
@@ -798,34 +811,35 @@ blockquote p {
         margin: 0 auto;
         height: 500px;
     }
+    .reviews h1 {
+        font-weight: lighter;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 30px;
+    }
     .wrapper {
         margin: 0 auto;
         text-align: center;
         width: 300px;
         padding-bottom: 166px;
         padding-top: 0;
-        height: 500px;
-    }
-    .reviews h1 {
-        text-align: center;
-        margin-top: 30px;
+        height: 575px;
     }
     blockquote {
         width: 100%;
         float: none;
         text-align: left;
         z-index: 5;
+        margin-left: -25px;
     }
     .reviews p {
         width: 100%;
-        position: absolute;
-        float: none;
         text-align: justify;
     }
     .reviews cite {
         width: 100%;
-        position: absolute;
-        margin-top: 135px;
+        margin-top: 155px;
+        margin-right: 75px;
     }
     blockquote::before {
         margin-right: 5.2em;
@@ -834,16 +848,14 @@ blockquote p {
         margin-left: auto;
     }
     blockquote::after {
-        display: table-row;
         margin-top: 10px;
-        color: #00b89a;
+        margin-right: -50px;
     }
     .reviews-arrow {
         margin: 0 auto;
         display: block;
         text-align:center;
     }
-
 
     .comments-bottom-wrapper {
         width: 300px;
@@ -858,18 +870,19 @@ blockquote p {
         z-index: 1;
         position: relative;
         text-align: center;
-        padding: 10px 25px 60px 25px;
+        padding: 5px 25px 60px 25px;
         font-size: 20px;
         line-height: 1.45;
     }
     .comments-bottom-button:after {
         width: 20px;
         height: 20px;
-        left: 134px;
+        left: 145px;
         top: 78px;
+        padding: 0 0 2px 0;
     }
     .comments-bottom-pic {
-        top: -126px;
+        top: -225px;
         right: 30px;
     }
     .footer-wrapper {
