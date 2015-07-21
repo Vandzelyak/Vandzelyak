@@ -1,12 +1,16 @@
+.item-list {
+    width:480px;
+}
 ul, p{
-    font-family: Arial;
+    font-family: arial;
     font-size: 12px;
     margin: 10px;
-
+    height: 40px;
+    padding-top: 15px;
 }
 .pager{
     width: 100%;
-    background: #F8F8F8;
+    background: #ffffff;
     list-style: none;
     border-color: #D8D8D8;
 }
@@ -26,4 +30,29 @@ a{
 }
 .pager .active a {
     color:white;
+}
+
+.pager-prev:before {
+    content: "\00ab";
+    font-size: 14px;
+    position: relative;
+    bottom: 1px;
+    vertical-align: middle;
+    color: #9933FF;
+}
+
+.pager-next:after {
+    content: "\00bb";
+    font-size: 14px;
+    position: relative;
+    bottom: 1px;
+    vertical-align: middle;
+    color: #9933FF;
+}
+.pager-item, .active {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 15px;
+    width: 23px;
+    border-color: #dddddd;
 }
