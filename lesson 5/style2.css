@@ -58,8 +58,6 @@
 .price_box_text {
     font-family: 'Trebuchet MS';
     color: darkslategrey;
-    display: block;
-    position: relative;
     text-align: center;
 }
 .price_box_text_sup {

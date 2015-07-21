@@ -10,28 +10,28 @@ h1 {
 
 
 
-.price_box_blue,
-.price_box_orange,
-.price_box_green {
+.price_box_left,
+.price_box_middle,
+.price_box_right {
     position: relative;
     z-index: 1;
 }
 
-.price_box_blue h3,
-.price_box_orange h3,
-.price_box_green h3 {
+.price_box_left h3,
+.price_box_middle h3,
+.price_box_right h3 {
     text-align: center;
 }
 
-.price_box_blue h3,
-.price_box_blue ul,
-.price_box_blue button {
+.price_box_left h3,
+.price_box_left ul,
+.price_box_left button {
     margin: auto;
     border: 0;
     padding: 0;
 }
 
-.price_box_blue {
+.price_box_left {
     display: inline-block;
     padding: 0 0;
     -webkit-box-sizing: border-box; /*for Safari and Chrome*/
@@ -48,34 +48,32 @@ h1 {
     overflow: hidden;
 }
 
-.price_box_blue {
+.price_box_left {
     background-color: #2bc2d5;
 }
-.price_box_head_blue {
+.price_box_head_left {
     margin-bottom: 0;
     height: 62px;
 }
-.price_box_head_blue h3 {
+.price_box_head_left h3 {
     color: white;
     font: 700 24px / 68px 'Trebuchet MS';
     text-align: center;
     text-transform: uppercase;
 }
-.price_box_body_blue h3 {
+.price_box_body_left h3 {
     color: #3f4042;
     font: 400 24px / 68px 'Trebuchet MS';
     text-transform: uppercase;
 }
-.price_box_body_blue {
+.price_box_body_left {
     background-color: white;
     height: 355px;
     padding-bottom: 35px;
 }
-.price_box_text_blue {
+.price_box_text_left {
     font-family: 'Trebuchet MS';
     color: #41525c;
-    display: block;
-    position: relative;
     text-align: center;
 }
 .price_box_text_sup {
@@ -100,7 +98,7 @@ h1 {
     top: 5px;
 }
 
-.price_box_list_blue {
+.price_box_list_left {
     margin: 10px 14px 18px 14px;
     color: darkgray;
     font-size: 15px;
@@ -108,19 +106,19 @@ h1 {
     letter-spacing: 0.75px;
     text-align: left;
 }
-.price_box_list_blue li {
+.price_box_list_left li {
     list-style: none;
     background-color: #edf5fd;
     min-width: 255px;
     margin: 1px;
     padding: 8px 0 8px 0;
 }
-.price_box_list_blue li span {
+.price_box_list_left li span {
     padding-left: 26px;
     margin-left: 33px;
     background: url(http://www.canguroencasa.com/Images/si.gif) 0 0 no-repeat;
 }
-.price_box_list_blue li:nth-child(even) {
+.price_box_list_left li:nth-child(even) {
     background-color: #f5f5f6;
 }
 .price_box_button_blue {
@@ -149,14 +147,14 @@ h1 {
     cursor: pointer;
 }
 
-.price_box_orange h3,
-.price_box_orange ul,
-.price_box_orange button {
+.price_box_middle h3,
+.price_box_middle ul,
+.price_box_middle button {
     margin: auto;
     border: 0;
     padding: 0;
 }
-.price_box_orange {
+.price_box_middle {
     display: inline-block;
     padding: 0 0;
     -webkit-box-sizing: border-box; /*for Safari and Chrome*/
@@ -181,23 +179,23 @@ h1 {
     margin-bottom: 0;
     min-height: 77px;
 }
-.price_box_head_orange h3 {
+.price_box_head_middle h3 {
     color: white;
     font: 700 24px / 68px 'Trebuchet MS';
     text-align: center;
     text-transform: uppercase;
 }
-.price_box_body_orange h3 {
+.price_box_body_middle h3 {
     color: #3f4042;
     font: 400 24px / 68px 'Trebuchet MS';
     text-transform: uppercase;
 }
-.price_box_body_orange {
+.price_box_body_middle {
     background-color: white;
     min-height: 355px;
     padding-bottom: 35px;
 }
-.price_box_text_orange {
+.price_box_text_middle {
     font-family: 'Trebuchet MS';
     color: #41525c;
     display: block;
@@ -205,7 +203,7 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
-.price_box_list_orange {
+.price_box_list_middle {
     margin: 10px 14px 18px 14px;
     color: darkgray;
     font-size: 15px;
@@ -213,26 +211,26 @@ h1 {
     letter-spacing: 0.75px;
     text-align: left;
 }
-.price_box_list_orange li {
+.price_box_list_middle li {
     list-style: none;
     background-color: #E6E6E6;
     min-width: 260px;
     margin: 1px;
     padding: 8px 0 8px 0;
 }
-.price_box_list_orange li span {
+.price_box_list_middle li span {
     padding-left: 26px;
     margin-left: 33px;
     background: url(http://www.canguroencasa.com/Images/si.gif) 0 0 no-repeat;
 }
-.price_box_list_orange .text_uppercase {
+.price_box_list_middle .text_uppercase {
     text-transform: uppercase;
 }
 
-.price_box_list_orange li:nth-child(even) {
+.price_box_list_middle li:nth-child(even) {
     background-color: #f5f5f6;
 }
-.price_box_button_orange {
+.price_box_button_middle {
     display: block;
     width: 253px;
     height: 38px;
@@ -249,25 +247,25 @@ h1 {
     text-transform: uppercase;
 }
 
-.price_box_button_orange:active {
+.price_box_button_middle:active {
     -webkit-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
     -moz-box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
     box-shadow: inset 2px 2px 0px 1px rgba(179, 86, 11, 1);
 }
-.price_box_button_orange:hover {
+.price_box_button_middle:hover {
     cursor: pointer;
 }
 
 
-.price_box_green h3,
-.price_box_green ul,
-.price_box_green button {
+.price_box_right h3,
+.price_box_right ul,
+.price_box_right button {
     margin: auto;
     border: 0;
     padding: 0;
 }
 
-.price_box_green {
+.price_box_right {
     display: inline-block;
     padding: 0 0;
     position: absolute;
@@ -284,30 +282,30 @@ h1 {
     overflow: hidden;
 }
 
-.price_box_green {
+.price_box_right {
     background-color: #00b89a;
 }
-.price_box_head_green {
+.price_box_head_right {
     margin-bottom: 0;
     height: 62px;
 }
-.price_box_head_green h3 {
+.price_box_head_right h3 {
     color: white;
     font: 700 24px / 68px 'Trebuchet MS';
     text-align: center;
     text-transform: uppercase;
 }
-.price_box_body_green h3 {
+.price_box_body_right h3 {
     color: #3f4042;
     font: 400 24px / 68px 'Trebuchet MS';
     text-transform: uppercase;
 }
-.price_box_body_green {
+.price_box_body_right {
     background-color: white;
     height: 355px;
     padding-bottom: 35px;
 }
-.price_box_text_green {
+.price_box_text_right {
     font-family: 'Trebuchet MS';
     color: #41525c;
     display: block;
@@ -336,7 +334,7 @@ h1 {
     top: 5px;
 }
 
-.price_box_list_green {
+.price_box_list_right {
     margin: 10px 14px 18px 14px;
     color: darkgray;
     font-size: 15px;
@@ -344,19 +342,19 @@ h1 {
     letter-spacing: 0.75px;
     text-align: left;
 }
-.price_box_list_green li {
+.price_box_list_right li {
     list-style: none;
     background-color: #edf5fd;
     min-width: 255px;
     margin: 1px;
     padding: 8px 0 8px 0;
 }
-.price_box_list_green li span {
+.price_box_list_right li span {
     padding-left: 26px;
     margin-left: 33px;
     background: url(http://www.canguroencasa.com/Images/si.gif) 0 0 no-repeat;
 }
-.price_box_list_green li:nth-child(even) {
+.price_box_list_right li:nth-child(even) {
     background-color: #f5f5f6;
 }
 
