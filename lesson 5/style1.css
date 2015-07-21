@@ -1,8 +1,8 @@
 .menu-wrapper {
     display: table;
     position:relative;
-    left:50%;
-    margin-left: -450px;
+    margin-left: auto;
+    margin-right: auto;
     width: 900px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
