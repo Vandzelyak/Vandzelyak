@@ -12,7 +12,7 @@ else if (integerNumber > 0)
     alert( '1 - значение больше нуля' );
 else if (integerNumber < 0)
     alert( '-1 - значение меньше нуля' );
-else if (integerNumber < 0)
+else if (integerNumber == 0)
     alert( '0 - значение равно нулю' );
 else
     alert ('Это же не число! :0');
