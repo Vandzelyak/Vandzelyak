@@ -1,0 +1,63 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'arial', sans-serif;
+}
+
+.ageCalculation {
+    background-image: url("http://wallpaper.pickywallpapers.com/2560x1440/annual-rings.jpg");
+    height: 768px;
+}
+form {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+
+}
+#currentYear,
+#birthYear {
+    width: 250px;
+    height: 55px;
+    font-size: 25px;
+    border: solid #4b1313 2px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#ageFirst,
+#ageSecond {
+    width: 58px;
+    background-color: #d19c64;
+    font-size: 25px;
+    position: relative;
+    padding: 5px 20px 5px 20px;
+}
+
+#or {
+    background-color: transparent;
+    font-size: 25px;
+}
+#click {
+    width: 255px;
+    height: 55px;
+    font-size: 25px;
+    background-color: #f59036;
+    color: #7c1703;
+    border: solid #7c1703 2px;
+    border-radius: 2px;
+    margin: 20px 0 20px 0;
+}
+
+#click:active {
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+#click:hover {
+    cursor: pointer;
+    color: #e6e6e6;
+    background-color: #b93409;
+}

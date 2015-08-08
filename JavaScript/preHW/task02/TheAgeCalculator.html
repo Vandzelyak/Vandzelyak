@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="TheAgeCalculator.css">
+    <script type="text/javascript" src="TheAgeCalculator.js"></script>
+</head>
+<body>
+<div class="ageCalculation">
+    <form>
+        <input type="text" id="currentYear" value="2015" placeholder="Current year" onchange="ageCalculation()"/><br><br>
+        <input type="text" id="birthYear" value="" placeholder="Year of birth" onchange="ageCalculation()"/><br><br>
+        <input id="ageFirst" value=""/>
+        <label id="or">OR</label>
+        <input id="ageSecond" value=""/>
+        <button type="button" id="click" onclick="ageCalculation()">Calculate</button>
+    </form>
+</div>
+</body>
+</html>
