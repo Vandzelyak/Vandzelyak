@@ -4,16 +4,20 @@
 //variable declaration
 var userName;
 var userPassword ;
+
 //userName initialization
-userName = prompt('Enter login','');
+userName = prompt ('Enter login','');
+
 //userName validation
 if (userName == null)
 {alert ('Canceled');}
 else if (userName == '')
 {alert ('Please enter your login')}
 else if (userName == 'admin')
+
 //userPassword initialization
-{userPassword = prompt('Enter password','');
+{userPassword = prompt ('Enter password','');
+
     //userPassword validation
     if (userPassword == null)
     {alert ('Canceled');}
