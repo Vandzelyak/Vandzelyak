@@ -4,15 +4,15 @@
 //variable declaration
 var integerNumber;
 //variable initialization
-integerNumber = prompt('Введите любое целое число:', '');
+integerNumber = prompt('Р’РІРµРґРёС‚Рµ Р»СЋР±РѕРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ:', '');
 //operations if else
 if (integerNumber == null || integerNumber == '')
-    alert ('Нужно было ввести число :(');
+    alert ('РќСѓР¶РЅРѕ Р±С‹Р»Рѕ РІРІРµСЃС‚Рё С‡РёСЃР»Рѕ :(');
 else if (integerNumber > 0)
-    alert( '1 - значение больше нуля' );
+    alert( '1 - Р·РЅР°С‡РµРЅРёРµ Р±РѕР»СЊС€Рµ РЅСѓР»СЏ' );
 else if (integerNumber < 0)
-    alert( '-1 - значение меньше нуля' );
+    alert( '-1 - Р·РЅР°С‡РµРЅРёРµ РјРµРЅСЊС€Рµ РЅСѓР»СЏ' );
 else if (integerNumber == 0)
-    alert( '0 - значение равно нулю' );
+    alert( '0 - Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ РЅСѓР»СЋ' );
 else
-    alert ('Это же не число! :0');
+    alert ('Р­С‚Рѕ Р¶Рµ РЅРµ С‡РёСЃР»Рѕ! :0');
