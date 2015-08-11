@@ -4,9 +4,9 @@
 //variable declaration
 var currentYear;
 //variable initialization
-currentYear = prompt('Какой сейчас год?', '');
+currentYear = prompt('РљР°РєРѕР№ СЃРµР№С‡Р°СЃ РіРѕРґ?', '');
 //operations if else
 if (currentYear == 2015)
-    alert( 'Вы правы!' );
+    alert( 'Р’С‹ РїСЂР°РІС‹!' );
 else
-    alert( 'С луны свалился? 2015!' );
+    alert( 'РЎ Р»СѓРЅС‹ СЃРІР°Р»РёСЃСЏ? 2015!' );
