@@ -1,10 +1,13 @@
 /**
  * Created by Lena on 08.08.2015.
  */
+
 //variable declaration
 var integerNumber;
+
 //variable initialization
 integerNumber = prompt('Введите любое целое число:', '');
+
 //operations if else
 if (integerNumber == null || integerNumber == '')
     alert ('Нужно было ввести число :(');
