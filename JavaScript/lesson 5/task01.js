@@ -37,3 +37,30 @@ var maxTasks = function (task) {
 maxTasks(tasksCompleted);
 
 
+//OR
+
+//an object creating
+var tasksCompleted = {
+
+    //object's parameters
+    'Anna': 29,
+    'Serg': 35,
+    'Elena': 1,
+    'Anton': 99
+};
+
+//defining variables for max number of tasks
+var max = tasksCompleted[1];
+
+//cycle checking object's parameters
+for (var item in tasksCompleted) {
+
+    //searching the item with most tasks completed
+    if (tasksCompleted[item] > max) {
+
+        //assigning value max if next item is bigger
+        max = tasksCompleted[item];
+    }
+}
+//calling function and display data
+console.log("The most productive manager is " + item);
