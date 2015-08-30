@@ -3,6 +3,7 @@
  */
 
 var ladder = {
+
     step: 0,
     up: function() { // upstairs
         this.step++;
@@ -16,4 +17,5 @@ var ladder = {
         alert( this.step );
     }
 };
+
 ladder.up().up().down().up().down().showStep(); //chaining

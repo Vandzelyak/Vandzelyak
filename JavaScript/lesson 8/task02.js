@@ -46,6 +46,6 @@ calc.addMethod("**", function(a, b) {
 
 var result = calc.calculate("2 ** 3");
 
-console.log(result);//8
+console.log(result); //8
 
-console.log( calc.calculate("3 + 7") );//10
+console.log( calc.calculate("3 + 7") ); //10
