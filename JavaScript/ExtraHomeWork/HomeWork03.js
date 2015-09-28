@@ -10,25 +10,31 @@ function Window (title, height, width){
     this.area = this.width * this.height;
 }
 
-
 function Wall(height, width){
     this.height = height;
     this.width = width;
     this.area = this.width * this.height;
 
     this.windows = [];
-    this.addWindow = function(window) {
-        if (this.area > window.area) {
+    this.addwindow = function(window){
+        if(this.area > window.area){
             this.windows.push(window);
             this.area -= window.area;
-        } else {
+        }else{
             return false;
         }
     }
+    console.log (this.addwindow);
+
+    this.getLength = function(){
+        return this.windows.length;
+    }
+
+    console.log (this.windows);
 
     this.getCuttedWindow = function(){
-        if(this.cuttedWindow != undefined){
-            return this.cuttedWindow.title;
+        if(this.addwindow != undefined){
+            return window.title;
         }else {
             return null;
         }
@@ -38,7 +44,7 @@ function Wall(height, width){
 var outsideWall = new Wall(3, 5);
 var firstWindow = new Window("First window is cutted, sir", 2, 3);
 var secondWindow = new Window("Second window is cutted, sir", 1, 2);
-outsideWall.addWindow(firstWindow);
+outsideWall.addwindow(firstWindow);
 console.log(outsideWall.getCuttedWindow());
 
 
