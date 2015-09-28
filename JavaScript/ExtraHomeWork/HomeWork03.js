@@ -31,21 +31,14 @@ function Wall(height, width){
     }
 
     console.log (this.windows);
-
-    this.getCuttedWindow = function(){
-        if(this.addwindow != undefined){
-            return window.title;
-        }else {
-            return null;
-        }
-    }
 }
 
 var outsideWall = new Wall(3, 5);
 var firstWindow = new Window("First window is cutted, sir", 2, 3);
 var secondWindow = new Window("Second window is cutted, sir", 1, 2);
 outsideWall.addwindow(firstWindow);
-console.log(outsideWall.getCuttedWindow());
+outsideWall.addwindow(secondWindow);
+console.log(outsideWall.getLength());
 
 
 /*function ourCoolFunction (){
