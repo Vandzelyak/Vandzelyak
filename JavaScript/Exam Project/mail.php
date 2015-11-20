@@ -1,7 +1,7 @@
 <?php
 
-$recepient = "4nucleusstudio@gmail.com";
-$sitename = "Nucleus";
+$recepient = "vandzelyak@gmail.com";
+$sitename = "Denise_Olivera";
 
 $name = trim($_GET["customer"]);
 $email = trim($_GET["email"]);
