@@ -65,6 +65,8 @@ body {
     display: inline-block;
     padding-left: 20px;
 }
+
+
 .nav a {
     font-size: 20px;
     color: #505c8a;
@@ -708,6 +710,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     overflow: auto;
     padding:120px 0 50px 0;
     display: none;
+    z-index: 10000;
 }
 .show-item .item-image{
     width: 100%;
@@ -733,7 +736,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     -ms-transform:rotate(-90deg);
 }
 .show-item-close.show-close{
-    top:65px;
+    top:40px;
     transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
