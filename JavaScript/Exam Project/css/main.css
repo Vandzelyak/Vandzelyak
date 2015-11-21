@@ -1208,6 +1208,17 @@ p{
 
 
 
+#worldmap {margin:0 auto;}
+#worldmap svg {background:rgba(80,92,138,0.94);border-radius: 200px;box-shadow:0 0 10px rgba(0,0,0,0.6);}
+.land {fill: rgba(174,177,193,.8);}
+#love {color:#505c8a;}
+
+
+
+
+
+
+
 
 
 /*------------Footer---------------------*/
