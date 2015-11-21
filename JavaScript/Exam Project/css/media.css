@@ -1,0 +1,536 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+	.reviews-wpar {
+    width: 88%;
+
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.reviews-wpar {
+    width: 92%;
+    min-width: 960px;
+	}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    /*------------Header-----------*/
+    .nav ul {
+        display: none;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: rgba(214, 215, 220, .5);
+        opacity: 1;
+    }
+    .nav li {
+        display: block;
+        padding-top: 5px;
+        position: relative;
+        right: 30px;
+    }
+    .nav a {
+        color: #505c8a;
+    }
+    .nav ul:hover {
+        background-color: rgba(214, 215, 220, .5);
+        opacity: 1;
+    }
+    .nav a:hover {
+        border-bottom: none;
+        color: rgba(214, 215, 220, .5);
+    }
+    .main_header {
+        width: 88%;
+        top:0;
+    }
+    .welcome h1 {
+        font-size: 40px;
+    }
+    .welcome h2 {
+        font-size: 20px;
+        margin-top: 350px;
+    }
+    .welcome {
+        background-size: 103em;
+        background-position: 50% 70%;
+    }
+    .welcome a {
+        font-size: 15px;
+    }
+    /*------------About-----------*/
+    .profile {
+        background: rgba(0, 0, 0, 0.001) url(../img/brush.png) 50% 2% no-repeat;
+        background-size: 100%;
+    }
+    .portfolio p {
+        font-size: 16px;
+    }
+    .portfolio h3 {
+        margin-top:0;
+    }
+    .avatar {
+        width: 80%;
+    }
+    .title {
+        font-size:30px;
+    }
+    /*------------Feedback-----------*/
+
+	.contacts .feedback {
+		margin-bottom: 20px;
+	}
+	.contacts p:first-child {
+    padding-top: 0;
+	}
+	.customer-container-inn {
+     margin-bottom: 15px;
+    }
+    .reviews-wpar {
+   	min-width: 650px;
+	}
+    /*------------Blog-----------*/
+    .item {
+        width: 90%;
+        height: 400px;
+    }
+    .item .front-end img{
+        max-height: 90%;
+        max-width: 90%;
+    }
+    /*------------Footer-----------*/
+    .map_canvas {
+        width: 60%;
+        height: 260px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.map_canvas {
+		width: 300px;
+		height: 220px;
+		margin: auto;
+	}
+
+	/*.reviews-wpar {*/
+	/*width: 75%;*/
+	/*min-width: 0;*/
+	/*}*/
+
+    /*------------Header-----------*/
+	.main_header {
+		width: 88%;
+		top:0;
+	}
+    .welcome h1 {
+        font-size: 30px;
+    }
+    .welcome h2 {
+        font-size: 15px;
+        margin-top: 340px;
+    }
+    .welcome {
+        background-size: 100em;
+        background-position: 50% 80%;
+    }
+    .welcome a {
+        font-size: 15px;
+    }
+    /*------------About-----------*/
+    .container {
+        width: 100%;
+        min-width: 350px;
+    }
+    .profile {
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.001) url(../img/brush.png) 50% 2% no-repeat;
+        background-size: contain;
+    }
+    .profile h2 {
+        margin-bottom: 5px;
+    }
+    .portfolio p {
+        font-size: 16px;
+    }
+    .portfolio h3 {
+        margin-top:-20px;
+    }
+    .avatar {
+        width: 120px !important;
+    }
+    .portfolio {
+        margin: 0;
+        margin-top:-25px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    /*------------Gallery-----------*/
+    .slides {
+        width: 325px;
+        height: 225px;
+    }
+
+    .slide {
+        width: 325px;
+        height: 225px;
+    }
+
+    .nav label {
+        color: rgba(80, 92, 138, 0.8);
+        font-size: 50pt;
+        line-height: 225px;
+    }
+
+    .nav-dots {
+        width: 100%;
+        bottom: 2px;
+    }
+
+    .nav-dots .nav-dot {
+        top: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    /*------------Feedback-----------*/
+    .reviews-wpar h3 {
+        width: 40%;
+    }
+
+    .customer-type {
+        max-width: 200px;
+    }
+
+    /*------------Blog-----------*/
+    .item {
+        width: 95%;
+        height: 300px;
+    }
+    .item .front-end img{
+        max-height: 95%;
+        max-width: 95%;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .map_canvas {
+        width: 300px;
+        height: 220px;
+        margin: auto;
+    }
+
+    /*------------Gallery-----------*/
+    .slides {
+        width: 630px;
+        height: 400px;
+    }
+
+    .slide {
+        width: 630px;
+        height: 500px;
+    }
+
+    .nav label {
+        font-size: 136pt;
+        line-height: 500px;
+    }
+
+    .nav-dots {
+        width: 100%;
+        bottom: 9px;
+    }
+
+    .nav-dots .nav-dot {
+        top: -5px;
+        width: 11px;
+        height: 11px;
+    }
+
+    /*------------Feedback-----------*/
+    .reviews-wpar h3 {
+        width: 40%;
+    }
+
+    .customer-type {
+        max-width: 200px;
+    }
+
+    /*------------Blog-----------*/
+    .item {
+        width: 95%;
+        height: 300px;
+    }
+    .item .front-end img{
+        max-height: 95%;
+        max-width: 95%;
+    }
+}
+
+
+@media only screen and (max-height : 240px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+    /*------------Header-----------*/
+    .welcome h2 {
+        margin-top: 380px;
+    }
+    .welcome {
+        background-size: 95em;
+        background-position: 52% 52%;
+        height: 100%;
+    }
+    .welcome a {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    /*------------About-----------*/
+    .container {
+        width: 100%;
+        min-width: 250px;
+    }
+    .container > div {
+        padding: 10px 5px !important;
+    }
+    .profile {
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.001) url(../img/brush.png) 50% 2% no-repeat;
+        background-size: contain;
+    }
+    .profile h2 {
+        margin-bottom: 5px;
+    }
+    .portfolio p {
+        font-size: 12px;
+    }
+    .profile h2 {
+        font-size: 18px;
+    }
+    .avatar {
+        width: 100px !important;
+    }
+    .portfolio {
+        margin: 10px;
+    }
+    .portfolio h3 {
+        margin-top: 0px;
+    }
+    .title {
+        font-size:20px;
+    }
+
+    /*------------Gallery-----------*/
+    .slides {
+        width: 325px;
+        height: 225px;
+    }
+    .slide {
+        width: 325px;
+        height: 225px;
+    }
+
+    .nav label {
+        font-size: 50pt;
+        line-height: 225px;
+    }
+    .nav-dots {
+        width: 100%;
+        bottom: 2px;
+    }
+    .nav-dots .nav-dot {
+        top: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    /*------------Feedback-----------*/
+    .reviews-wpar h3{
+        width: 40%;
+    }
+    .customer-type {
+        max-width: 200px;
+    }
+    /*------------Blog-----------*/
+    .item {
+        width: 95%;
+        height: 300px;
+    }
+    .item .front-end img{
+        max-height: 95%;
+        max-width: 95%;
+    }
+}
+
+
+
+@media only screen and (max-width : 320px) {
+    /*------------Header------------*/
+    .nav ul {
+        display: none;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: rgba(214, 215, 220, .5);
+        opacity: 1;
+    }
+    .welcome h1 {
+        font-size: 25px;
+    }
+    .welcome h2 {
+        font-size: 13px;
+        margin-top: 290px;
+    }
+    .welcome {
+        background-size: 85em;
+        background-position: 52% 52%;
+        height: 100%;
+    }
+    .welcome a {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    /*------------About------------*/
+    .container {
+        width: 100%;
+        min-width: 250px;
+    }
+    .container > div {
+        padding: 10px 5px !important;
+    }
+    .profile {
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.001) url(../img/brush.png) 50% 2% no-repeat;
+        background-size: contain;
+    }
+    .profile h2 {
+        margin-bottom: 5px;
+    }
+    .portfolio p {
+        font-size: 12px;
+    }
+    .profile h2 {
+        font-size: 18px;
+    }
+    .avatar {
+        width: 100px !important;
+    }
+    .portfolio {
+        margin: 10px;
+    }
+    .portfolio h3 {
+        margin-top: 0px;
+    }
+    .title {
+        font-size:20px;
+    }
+    /*------------Gallery-----------*/
+    .slides {
+        width: 325px;
+        height: 225px;
+    }
+    .slide {
+        width: 325px;
+        height: 225px;
+    }
+
+    .nav label {
+        color: rgba(80,92,138,0.8);
+        font-size: 50pt;
+        line-height: 225px;
+    }
+    .nav-dots {
+        width: 100%;
+        bottom: 2px;
+    }
+    .nav-dots .nav-dot {
+        top: 8px;
+        width: 8px;
+        height: 8px;
+    }
+
+    /*------------Feedback-----------*/
+    .reviews-wpar h3{
+        width: 40%;
+    }
+    .customer-type {
+        max-width: 200px;
+    }
+    /*------------Blog-----------*/
+    .item {
+        width: 92%;
+        height: 300px;
+    }
+
+    .item .front-end img{
+        max-height: 92%;
+        max-width: 92%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Extra for .hookahs*/
+@media only screen and (max-width : 719px) {
+	
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.customer-quote {
+		width: 250px
+	}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.nav ul {
+		display: block !important;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
