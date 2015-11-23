@@ -429,7 +429,7 @@
     }
     .item {
         width: 85%;
-        height: 300px;
+        height: 200px;
         left: 10%;
     }
 
@@ -546,7 +546,7 @@
     /*------------Blog-----------*/
     .item {
         width: 95%;
-        height: 300px;
+        height: 200px;
     }
     .item .front-end img{
         max-height: 95%;
@@ -671,11 +671,11 @@
     /*------------Blog-----------*/
     .item {
         width: 95%;
-        height: 300px;
+        height: 150px;
     }
 
     .item .front-end img{
-        max-height: 95%;
+        max-height: 90%;
         max-width: 95%;
     }
     .welcome, #about, .wrapper, .weddings, .blog,.feedback, .contact, .main_footer {
