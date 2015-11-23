@@ -3339,3 +3339,39 @@ Copyright (c) 2015 Daniel Eden
         transform: translateY(20px); }
 }
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1.334em) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(1.334em) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1.334em) translateZ(0);
+    -moz-transform: translateX(1.334em) translateZ(0);
+    -ms-transform: translateX(1.334em) translateZ(0);
+    -o-transform: translateX(1.334em) translateZ(0);
+    transform: translateX(1.334em) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    height: 100%;
+  }
+}

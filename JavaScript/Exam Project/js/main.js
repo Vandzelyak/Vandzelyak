@@ -1,14 +1,132 @@
-/**
- * Created by Lena on 18.11.2015.
- */
+$(document).ready(function() {
+
+    $(".auth_buttons").click(function() {
+        $(this).next().slideToggle();
+    });
+    $(".nav_button").click(function() {
+        $(".nav ul").slideToggle();
+    });
+
+
+
+
+    //Таймер обратного отсчета
+    //Документация: http://keith-wood.name/countdown.html
+    //<div class="countdown" date-time="2015-01-07"></div>
+    var austDay = new Date($(".countdown").attr("date-time"));
+    $(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+
+    //Попап менеджер FancyBox
+    //Документация: http://fancybox.net/howto
+    //<a class="fancybox"><img src="image.jpg" /></a>
+    //<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
+    //$(".fancybox").fancybox();
+    $(function () {
+        $(".fancybox").fancybox({
+            'beforeClose': function() {
+                $('#feedback')[0].reset();
+            }
+        });
+    });
+
+    //Навигация по Landing Page
+    //$(".top_mnu") - это верхняя панель со ссылками.
+    //Ссылки вида <a href="#contacts">Контакты</a>
+    $(".top_mnu").navigation();
+
+    //Добавляет классы дочерним блокам .block для анимации
+    //Документация: http://imakewebthings.com/jquery-waypoints/
+    $(".block").waypoint(function(direction) {
+        if (direction === "down") {
+            $(".class").addClass("active");
+        } else if (direction === "up") {
+            $(".class").removeClass("deactive");
+        };
+    }, {offset: 100});
+
+    //Плавный скролл до блока .div по клику на .scroll
+    //Документация: https://github.com/flesler/jquery.scrollTo
+    $("a.scroll").click(function() {
+        $.scrollTo($(".div"), 800, {
+            offset: -90
+        });
+    });
+
+    //Аякс отправка форм
+    //Документация: http://api.jquery.com/jquery.ajax/
+    // $("#feedback").(function() {
+    // 			$('form')[0].reset();
+    // 	});
+
+    $("#feedback").submit(function() {
+        $.ajax({
+            type: "GET",
+            url: "mail.php",
+            data: $("#feedback").serialize()
+        }).done(function() {
+            alert("Thanks for feedback!");
+            setTimeout(function() {
+                $('form')[0].reset();
+                $.fancybox.close();
+            }, 1000);
+        });
+        return false;
+    });
+
+
+    /* скроллинг меню */
+
+    $('#nav-about, #start_planning').on('click', function(e){
+        var header = $('.main_header').height();
+        var scrolling = ($('.about').offset().top)-header;
+        e.preventDefault();
+
+        $('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+    })
+
+    $('#nav-weddings').on('click', function(e){
+        var header = $('.main_header').height();
+        var scrolling = ($('.weddings').offset().top)-header;
+        e.preventDefault();
+
+        $('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+    })
+
+    $('#nav-feedback').on('click', function(e){
+        var header = $('.main_header').height();
+        var scrolling = ($('.feedback').offset().top)-header;
+        e.preventDefault();
+
+        $('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+    })
+
+    $('#nav-blog').on('click', function(e){
+        var header = $('.main_header').height();
+        var scrolling = ($('#blog').offset().top)-header;
+        e.preventDefault();
+
+        $('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+    })
+
+    $('#nav-contact').on('click', function(e){
+        var header = $('.main_header').height();
+        var scrolling = ($('.contact').offset().top)-header;
+        e.preventDefault();
+
+        $('html,body').stop(true).animate({scrollTop: scrolling},500,function(){	})
+    })
+
+});
+
+/* about section */
+
 $(function() {
     setTimeout(function() {
         $('.container').addClass('fadeIn');
     }, 300);
 });
 
-
-
+/* blog section */
 
 $(function(){
     $(".show-item").hide();
@@ -33,6 +151,8 @@ $(function(){
         }, 1000)
     })
 })
+
+/* globe */
 
 var width = 250, height = 250;
 
@@ -78,3 +198,18 @@ function bgscroll(){
 
 setInterval(bgscroll, scrollSpeed);
 
+
+/* scroll to top */
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
