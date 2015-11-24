@@ -215,6 +215,8 @@ $(document).ready(function(){
 });
 
 /* flip steps on mobile */
-$( ".flip-container" ).hover();
+$(".flip-container").click(function() {
+    $("creation").toggleClass("hovered");
+});
 
-$( ".creation" ).hover();
+
