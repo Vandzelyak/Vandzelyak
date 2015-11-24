@@ -215,10 +215,6 @@ $(document).ready(function(){
 });
 
 /* flip steps on mobile */
-$( ".flip-container" ).hover(
-    function() {
-        $( this ).addClass( "hover" );
-    }, function() {
-        $( this ).removeClass( "hover" );
-    }
-);
+$( ".flip-container" ).hover();
+
+$( ".creation" ).hover();
