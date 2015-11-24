@@ -216,7 +216,7 @@ $(document).ready(function(){
 
 /* flip steps on mobile */
 $(".flip-container").click(function() {
-    $("creation").toggleClass("hovered");
+    $(".creation").toggleClass("hovered");
 });
 
 
