@@ -215,15 +215,15 @@ $(document).ready(function(){
 });
 
 /* flip steps on mobile */
-$('.creation').on("touchstart", function (e) {
-    'use strict'; //satisfy code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass('hover');
-        $('.creation').not(this).removeClass('hover');
-        e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});
+
+    $('.creation').hover(
+
+        function () {
+            $(this).css({"-webkit-transform": "rotateY(180deg)", "-moz-transform": "rotateY(180deg)"});
+        },
+
+        function () {
+            $(this).css({"-webkit-transform": "rotateY(360deg)", "-moz-transform": "rotateY(360deg)", });
+        }
+    );
+
