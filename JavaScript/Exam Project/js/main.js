@@ -215,4 +215,17 @@ $(document).ready(function(){
 });
 
 /* flip steps on mobile */
-$( ".details" ).click();
+$( ".flip-container" ).hover(
+    function() {
+        $( this ).addClass( "hover" );
+    }, function() {
+        $( this ).removeClass( "hover" );
+    }
+);
+$( ".creation" ).hover(
+    function() {
+        $( this ).addClass( "hover" );
+    }, function() {
+        $( this ).removeClass( "hover" );
+    }
+);
