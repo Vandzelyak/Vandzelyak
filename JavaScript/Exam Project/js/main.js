@@ -213,3 +213,6 @@ $(document).ready(function(){
         return false;
     });
 });
+
+/* flip steps on mobile */
+$( ".details" ).click();
