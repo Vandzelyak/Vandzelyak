@@ -282,7 +282,7 @@ html, body {
     display: inline-block;
  }
 
-.flip-container:hover .creation, .flip-container.hovered {
+.flip-container:hover .creation, .flip-container.hover, .creation.hover {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
 }
