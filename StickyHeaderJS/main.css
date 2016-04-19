@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 1em Arial, sans-serif;
+    color: #0278DF;
+}
+
+.wrapper {
+    width: 640px;
+    margin: 0 auto;
+}
+
+#nav {
+    width: 640px;
+    background-color: #0077B5;
+    opacity: 0.9;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-right: 1px solid #0077B5;
+}
+p {
+    color: #000;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
