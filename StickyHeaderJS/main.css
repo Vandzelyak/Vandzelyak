@@ -9,7 +9,9 @@ body {
     width: 640px;
     margin: 0 auto;
 }
-
+header {
+    text-align:center;
+}
 #nav {
     width: 640px;
     background-color: #0077B5;
