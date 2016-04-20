@@ -59,5 +59,10 @@
             }
             document.addEventListener('DOMContentLoaded', scroll, false);
         </script>
+        <script type="text/javascript">
+            document.addEventListener('touchmove', function(event) {
+                event.preventDefault();
+            }, false);
+        </script>
         </body>
 </html>
