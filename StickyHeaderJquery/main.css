@@ -14,6 +14,12 @@ body {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
 }
 
 .nav ul {
