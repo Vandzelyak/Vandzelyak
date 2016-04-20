@@ -59,11 +59,8 @@
             }
             document.addEventListener('DOMContentLoaded', scroll, false);
         </script>
-        <script type="text/javascript" src="scrollfix.js"></script>
-
         <script type="text/javascript">
-            var scrollingContent = document.getElementById("myScrollingDiv");
-            new ScrollFix(scrollingContent);
+            $('.nav').css('min-height', $(window).height() - 55 + 'px');
         </script>
         </body>
 </html>
