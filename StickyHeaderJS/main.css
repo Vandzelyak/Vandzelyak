@@ -14,8 +14,7 @@ body {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
-    -webkit-overflow-scrolling:touch;
-    overflow:auto;
+    position: fixed;
 }
 
 #nav ul {
