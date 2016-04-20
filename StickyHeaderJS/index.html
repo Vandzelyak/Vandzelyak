@@ -59,10 +59,11 @@
             }
             document.addEventListener('DOMContentLoaded', scroll, false);
         </script>
+        <script type="text/javascript" src="scrollfix.js"></script>
+
         <script type="text/javascript">
-            document.addEventListener('touchmove', function(event) {
-                event.preventDefault();
-            }, false);
+            var scrollingContent = document.getElementById("myScrollingDiv");
+            new ScrollFix(scrollingContent);
         </script>
         </body>
 </html>
