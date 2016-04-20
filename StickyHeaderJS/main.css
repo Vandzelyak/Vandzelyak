@@ -11,8 +11,6 @@ body {
     position:absolute;
     z-index:1;
     top:45px; bottom:48px; left:0;
-    width:100%;
-    background:#aaa;
     overflow:auto;
 }
 
