@@ -17,6 +17,7 @@ header {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
+    position: fixed;
 }
 
 #nav ul {
