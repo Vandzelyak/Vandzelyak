@@ -50,5 +50,14 @@
     </div>
     <div class="container-fluid">
 <script src="main.js"></script>
-</body>
+        <script type="text/javascript" src="iscroll-lite.js"></script>
+        <script type="text/javascript">
+
+            var theScroll;
+            function scroll() {
+                theScroll = new iScroll('wrapper');
+            }
+            document.addEventListener('DOMContentLoaded', scroll, false);
+        </script>
+        </body>
 </html>
