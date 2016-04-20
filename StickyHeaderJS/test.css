@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+header {
+    text-align: center;
+    font-size: 72px;
+    line-height: 108px;
+    height: 108px;
+    background: #335C7D;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    position: fixed;
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+    width: 100%;
+    background: #efc47D;
+    text-align: left;
+    padding-left: 20px;
+}
+
+article.sticky {
+    display: inline-block;
+    margin-top: 108px;
+}

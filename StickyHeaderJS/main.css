@@ -8,11 +8,12 @@ body {
 .wrapper {
     width: 640px;
     margin: 0 auto;
-    overflow: scroll;
+    overflow:auto;
 }
 header {
     text-align:center;
 }
+
 #nav {
     width: 640px;
     background-color: #0077B5;
