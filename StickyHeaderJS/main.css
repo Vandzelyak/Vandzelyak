@@ -8,6 +8,12 @@ body {
 #wrapper {
     width: 640px;
     margin: 0 auto;
+    position:absolute;
+    z-index:1;
+    top:45px; bottom:48px; left:0;
+    width:100%;
+    background:#aaa;
+    overflow:auto;
 }
 
 #nav {
