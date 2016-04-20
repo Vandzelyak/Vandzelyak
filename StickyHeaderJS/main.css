@@ -8,8 +8,6 @@ body {
 .wrapper {
     width: 640px;
     margin: 0 auto;
-    position:absolute;
-    overflow:auto;
 }
 header {
     text-align:center;
@@ -18,8 +16,6 @@ header {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
-    position:absolute;
-    z-index:1;
 }
 
 #nav ul {
