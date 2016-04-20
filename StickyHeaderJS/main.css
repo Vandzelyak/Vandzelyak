@@ -41,3 +41,23 @@ p {
     position: fixed;
     top: 0;
 }
+
+@media only screen and (max-width : 320px) {
+    h1 {
+        font-size: 1.1em;
+    }
+
+    .wrapper {
+        width: 300px;
+    }
+    #nav {
+        font-size: 0.7em;
+        width: 300px;
+    }
+    #nav a {
+        padding: 5px 10px;
+    }
+    p {
+        font-size: 0.7em;
+    }
+}
