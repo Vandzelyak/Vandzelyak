@@ -1,7 +1,7 @@
 /**
  * Created by Lena on 19.04.2016.
  */
-var headerFix = document.getElementById('nav');
+var headerFix = document.getElementById('scroll-content');
 
 var headerFixTop = headerFix.getBoundingClientRect().top + window.pageYOffset;
 

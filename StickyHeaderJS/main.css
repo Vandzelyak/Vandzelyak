@@ -8,30 +8,26 @@ body {
 #wrapper {
     width: 640px;
     margin: 0 auto;
-    position:absolute;
-    z-index:1;
-    top:45px; bottom:48px; left:0;
-    overflow:auto;
 }
 
-#nav {
+#scroll-content {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
 }
 
-#nav ul {
+#scroll-content ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#nav li {
+#scroll-content li {
     float: left;
 }
 
-#nav a {
+#scroll-content a {
     display: block;
     text-decoration: none;
     padding: 10px 20px;
