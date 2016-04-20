@@ -10,11 +10,11 @@
 
 </head>
 <body>
-<div>
-    <h1>Sticky header by using JavaScript</h1>
-</div>
-<div id="wrapper">
-    <div id="scroll-content">
+<div class="wrapper">
+    <div>
+        <h1>Sticky header by using JavaScript</h1>
+    </div>
+    <div id="nav">
         <ul>
             <li><a href="#">Section 01</a></li>
             <li><a href="#">Section 02</a></li>
@@ -49,13 +49,6 @@
 </div>
 <script src="main.js"></script>
 <script type="text/javascript" src="iscroll.js"></script>
-<script type="text/javascript">
 
-    var theScroll;
-    function scroll() {
-        theScroll = new iScroll('wrapper');
-    }
-    document.addEventListener('DOMContentLoaded', scroll, false);
-</script>
 </body>
 </html>

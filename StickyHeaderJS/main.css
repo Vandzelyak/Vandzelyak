@@ -5,29 +5,29 @@ body {
     color: #0278DF;
 }
 
-#wrapper {
+.wrapper {
     width: 640px;
     margin: 0 auto;
 }
 
-#scroll-content {
+#nav {
     width: 640px;
     background-color: #0077B5;
     opacity: 0.9;
 }
 
-#scroll-content ul {
+#nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#scroll-content li {
+#nav li {
     float: left;
 }
 
-#scroll-content a {
+#nav a {
     display: block;
     text-decoration: none;
     padding: 10px 20px;
