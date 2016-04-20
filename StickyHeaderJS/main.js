@@ -4,7 +4,7 @@
 
 var headerFix = document.getElementById('nav');
 
-var headerFixTop = headerFix.getBoundingClientRect().bottom + window.pageYOffset;
+var headerFixTop = headerFix.getBoundingClientRect().top + window.pageYOffset;
 
 window.onscroll = function() {
     if (headerFix.classList.contains('fixed') && window.pageYOffset < headerFixTop) {
