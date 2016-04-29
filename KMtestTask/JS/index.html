@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form id="example_form">
+
+    Email address: <input type="text" name="email address"> </input> <br />
+
+    <input type="submit" value="Submit"> </input>
+
+</form>
+<script>
+    window.onload = function() {
+        var form = document.getElementById('example_form');
+        form.onsubmit = function() {
+            _kmq.push(['record', 'Email Submitted']);
+        }
+    }
+</script>

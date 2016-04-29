@@ -1,0 +1,120 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+	.reviews-wpar {
+    width: 88%;
+
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.reviews-wpar {
+    width: 92%;
+    min-width: 960px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.nav ul {
+		display: none;
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 100%;
+		background-color: rgba(255,255,255, .5);
+		z-index: 10;
+	}
+	.nav ul {
+		background-color: #000;
+		opacity: 1;
+	}
+	.nav li {
+		display: block;
+		padding-top: 5px;
+		position: relative;
+		right: 30px;
+	}
+	.nav a {
+		color: #fff;
+	}
+	.nav a:hover {
+		border-bottom: none;
+		color: #33cccc;
+	}
+	.about_us h2 {
+		/*-margin-top: -70px;*/
+	}
+	.map_canvas {
+		width: 60%;
+		height: 260px;
+		margin: auto;
+		padding-bottom: 50px;
+	}
+	.contacts .feedback {
+		margin-bottom: 20px;
+	}
+	.contacts p:first-child {
+    padding-top: 0;
+	}
+	.customer-container-inn {
+     margin-bottom: 15px;
+    }
+    .reviews-wpar {
+   	min-width: 650px;
+	}
+
+    
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.map_canvas {
+		width: 300px;
+		height: 220px;
+		margin: auto;
+	}
+	/*.reviews-wpar {*/
+    /*width: 75%;*/
+    /*min-width: 0;*/
+	/*}*/
+
+    
+}
+/*Extra for .hookahs*/
+@media only screen and (max-width : 719px) {
+	
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.customer-quote {
+		width: 250px
+	}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.nav ul {
+		display: block !important;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
